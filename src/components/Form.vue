@@ -1,6 +1,4 @@
 <script setup>
-import { onMounted, ref } from 'vue'
-import { gsap } from 'gsap'
 import QuestionExperience from './QuestionExperience.vue'
 import QuestionUserSelection from './QuestionUserSelection.vue'
 import QuestionRatingLowStep1 from './QuestionRatingLowStep1.vue'
@@ -21,16 +19,6 @@ const handleNext = ({ id, nextId, value }) => {
   nextElement.classList.add('active')
   nextElement.scrollIntoView({ behavior: 'smooth', block: 'center' })
 }
-
-// const showQuestion = (id, to = 'up') => {}
-
-// const hideQuestion = (id, to = 'up') => {
-//   // gsap.to(`#${id}`, {
-//   //   y: '-100',
-//   //   duration: 0.25,
-//   //   opacity: 0
-//   // })
-// }
 </script>
 
 <template>
